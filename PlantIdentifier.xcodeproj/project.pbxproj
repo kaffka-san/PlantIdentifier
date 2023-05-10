@@ -13,6 +13,10 @@
 		3073A3622A0A6AC9003475C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073A3602A0A6AC9003475C1 /* Main.storyboard */; };
 		3073A3642A0A6ACB003475C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3073A3632A0A6ACB003475C1 /* Assets.xcassets */; };
 		3073A3672A0A6ACB003475C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073A3652A0A6ACB003475C1 /* LaunchScreen.storyboard */; };
+		3073A36F2A0A6ADA003475C1 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3073A36E2A0A6AD9003475C1 /* FlowerClassifier.mlmodel */; };
+		3073A3722A0A81BE003475C1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3073A3712A0A81BE003475C1 /* Alamofire */; };
+		3073A3752A0A81F8003475C1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3073A3742A0A81F8003475C1 /* SwiftyJSON */; };
+		3073A3772A0BFBBD003475C1 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3073A3762A0BFBBD003475C1 /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		3073A3632A0A6ACB003475C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3073A3662A0A6ACB003475C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3073A3682A0A6ACB003475C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3073A36E2A0A6AD9003475C1 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		3073A3762A0BFBBD003475C1 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3073A3752A0A81F8003475C1 /* SwiftyJSON in Frameworks */,
+				3073A3722A0A81BE003475C1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +69,10 @@
 				3073A35E2A0A6AC9003475C1 /* ViewController.swift */,
 				3073A3602A0A6AC9003475C1 /* Main.storyboard */,
 				3073A3632A0A6ACB003475C1 /* Assets.xcassets */,
+				3073A3762A0BFBBD003475C1 /* default.jpg */,
 				3073A3652A0A6ACB003475C1 /* LaunchScreen.storyboard */,
 				3073A3682A0A6ACB003475C1 /* Info.plist */,
+				3073A36E2A0A6AD9003475C1 /* FlowerClassifier.mlmodel */,
 			);
 			path = PlantIdentifier;
 			sourceTree = "<group>";
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = PlantIdentifier;
+			packageProductDependencies = (
+				3073A3712A0A81BE003475C1 /* Alamofire */,
+				3073A3742A0A81F8003475C1 /* SwiftyJSON */,
+			);
 			productName = PlantIdentifier;
 			productReference = 3073A3572A0A6AC9003475C1 /* PlantIdentifier.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = 3073A34E2A0A6AC9003475C1;
+			packageReferences = (
+				3073A3702A0A81BE003475C1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3073A3732A0A81F8003475C1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 3073A3582A0A6AC9003475C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +146,7 @@
 				3073A3672A0A6ACB003475C1 /* LaunchScreen.storyboard in Resources */,
 				3073A3642A0A6ACB003475C1 /* Assets.xcassets in Resources */,
 				3073A3622A0A6AC9003475C1 /* Main.storyboard in Resources */,
+				3073A3772A0BFBBD003475C1 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3073A36F2A0A6ADA003475C1 /* FlowerClassifier.mlmodel in Sources */,
 				3073A35F2A0A6AC9003475C1 /* ViewController.swift in Sources */,
 				3073A35B2A0A6AC9003475C1 /* AppDelegate.swift in Sources */,
 				3073A35D2A0A6AC9003475C1 /* SceneDelegate.swift in Sources */,
@@ -358,6 +378,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3073A3702A0A81BE003475C1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3073A3732A0A81F8003475C1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3073A3712A0A81BE003475C1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3073A3702A0A81BE003475C1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3073A3742A0A81F8003475C1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3073A3732A0A81F8003475C1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3073A34F2A0A6AC9003475C1 /* Project object */;
 }
